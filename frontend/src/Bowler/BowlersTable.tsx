@@ -8,6 +8,7 @@ function BowlersTable() {
     const fetchBowlerData = async () => {
       try {
         const rsp = await fetch('http://localhost:5236/Bowlers');
+        //was getting a lot of errors with fetching.
         if (!rsp.ok) {
           throw new Error('Failed to fetch data');
         }

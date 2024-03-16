@@ -15,7 +15,7 @@ namespace Mission10_Zein.Models
             _bowlingcontext = temp;
         }
 
-
+        //get all bowlers from the database
         public IEnumerable<Bowler> Bowlers => _bowlingcontext.Bowlers;
         public IEnumerable<Team> Teams => _bowlingcontext.Teams;
 

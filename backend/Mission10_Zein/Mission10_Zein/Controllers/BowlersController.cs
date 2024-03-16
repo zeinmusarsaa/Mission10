@@ -21,6 +21,7 @@ namespace Mission10_Zein.Controllers
         [HttpGet(Name = "Bowling")]
         public IEnumerable<Bowler> Get()
         {
+            //retrieving bowler data, filtering by TeamId
             var bowlerData = _bowlingRepository.Bowlers.Where(x => x.TeamId is 1 or 2).ToArray();
 
             return bowlerData;
